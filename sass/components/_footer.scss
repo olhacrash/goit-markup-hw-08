@@ -1,0 +1,121 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: getColor('bcg-gray');
+}
+
+.contacts-style {
+    margin-top: 20px;
+    margin-left: auto;
+    font-style: normal;
+}
+
+.footer .logo-header {
+    color: getColor('title');
+}
+
+.contacts-list-footer {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.footer .link-adress {
+    color: getColor('title');
+    text-decoration: none;
+    line-height: 1.71;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: getColor('accent-text');
+    }
+}
+
+.footer .link {
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 1.71;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    color: getColor('footer-link');
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: getColor('accent-text');
+    }
+}
+
+.item-style:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address-join-to {
+    display: flex;
+    align-items: baseline;
+}
+
+.join-to {
+    margin-left: 70px;
+    margin-right: 93px;
+}
+
+.join-to-title,
+.follow-us-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.footer--socials-icon {
+    fill: #ffffff;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer--socials-link {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer__socials {
+    margin-top: 20px;
+}
+
+// Подпишитесь на нас
+
+.form-follow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.email-field {
+    width: 358px;
+    height: 50px;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: getColor('title');
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+
+        display: flex;
+        align-items: center;
+
+        color: rgba(255, 255, 255, 0.6);
+    }
+}

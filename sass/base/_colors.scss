@@ -1,0 +1,16 @@
+$colors: (
+    'primary-gray': #212121,
+    'accent-text': #2196f3,
+    'paragraph-text': #757575,
+    'title': #ffffff,
+    'bcg-gray': #2f303a,
+    'secong-bcg': #f5f5f5,
+    'logo-black': #000000,
+    'third-bcg': #f5f4fa,
+    'button-bcg': #188ce8,
+    'footer-link': rgba(255, 255, 255, 0.6),
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}

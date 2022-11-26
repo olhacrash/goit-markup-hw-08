@@ -1,0 +1,238 @@
+// Модалка
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.2);
+
+    width: 100%;
+    height: 100%;
+    transition: opacity 250ms linear, visibility 250ms;
+}
+
+.backdrop.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 40px;
+    width: 528px;
+    height: 581px;
+
+    background-color: getColor('title');
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    transition: transform 250ms ease-out;
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -70%);
+}
+
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background-color: transparent;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+
+    cursor: pointer;
+    transition: fill 250ms var(--cubic-brizer);
+
+    &:hover,
+    &:focus {
+        fill: getColor('accent-text');
+    }
+}
+
+/* Форма */
+
+
+.order-service ul {
+    margin-bottom: 20px;
+}
+
+.form-title {
+    margin-bottom: 12px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+}
+
+.form-field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+
+.form-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    fill: var(--primary-text-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-textarea {
+    width: 448px;
+    height: 120px;
+    border-radius: 4px;
+    padding-left: 12px;
+    padding-top: 12px;
+    outline: transparent;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &::placeholder {
+        font-size: 12px;
+        line-height: calc(14 / 12);
+        letter-spacing: 0.01em;
+
+        color: rgba(117, 117, 117, 0.5);
+    }
+
+    &:hover,
+    &:focus {
+        border-color: getColor('accent-text');
+    }
+}
+
+.form-field label {
+    display: inline-block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    color: getColor('paragraph-text');
+}
+
+.form-input {
+    width: 448px;
+    height: 40px;
+    padding: 12px 42px;
+    outline: transparent;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover+.form-icon,
+    &:focus+.form-icon {
+        border-color: getColor('accent-text');
+            fill: getColor('accent-text');
+    }
+
+    &:hover,
+    &:focus {
+        border-color: getColor('accent-text');
+    }
+}
+
+.accept {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    color: getColor('paragraph-text');
+    line-height: 1.71;
+}
+
+.accept-link {
+    color: getColor('accent-text');
+    text-decoration: underline;
+    margin-left: 7px;
+}
+
+/* Чекбокс */
+
+.form-checkbox {
+    appearance: none;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.checkbox-icon {
+    margin-right: 7px;
+}
+
+.checkbox-icon .unchecked {
+    opacity: 1;
+    transition: 250ms var(--cubic-brizer);
+}
+
+.form-checkbox:checked+.checkbox-icon .unchecked {
+    opacity: 0;
+}
+
+.checkbox-icon .checked {
+    opacity: 0;
+    transition: 250ms var(--cubic-brizer);
+}
+
+.form-checkbox:checked+.checkbox-icon .checked {
+    opacity: 1;
+}
+
+/* Кнопка отправки */
+
+.btn-postavsya {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-send {
+    padding: 10px 52px;
+    border-color: transparent;
+    border-radius: 4px;
+    background-color: getColor('accent-text');
+        color: getColor('title');
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    font-family: inherit;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+    }
+}

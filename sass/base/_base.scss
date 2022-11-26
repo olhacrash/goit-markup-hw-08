@@ -1,0 +1,38 @@
+body {
+    color: getColor('primary-gray');
+    background-color: getColor('title');
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+// .section {
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+// }
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+    // desktop
+    @media screen and (min-width: 1200px) {
+        width: 1970px;
+    }
+
+    // tablet screen
+    @media screen and (min-width: 768px) {
+        width: 738px;
+    }
+
+    // mobile screen
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+}
