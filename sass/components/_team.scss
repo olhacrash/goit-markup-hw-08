@@ -1,48 +1,83 @@
 .team {
-    text-align: center;
+text-align: center;
     background-color: getColor('third-bcg');
+padding-bottom: 60px;
+    padding-top: 60px;
 
-    &__title {
-        margin-bottom: 50px;
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 738px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1170px;
+    }
+
+  &__title {
+    margin-bottom: 30px;
         font-weight: 700;
-        font-size: 36px;
-        line-height: 1.16;
+    font-size: 28px;
+        line-height: calc(33 / 28);
         text-align: center;
-        margin-bottom: 50px;
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+        line-height: calc(42 / 36);
     }
+  }
 
-    &__list {
-        display: flex;
+  &__list {
+    @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 30px;
+        flex-wrap: wrap;
     }
+  }
 
-    &__item {
-        flex-basis: calc((100% - 90px) / 4);
-        background-color: getColor('title');
+  &__item {
+    background-color: getColor('title');
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
             0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
+width: 450px;
+    height: 622px;
+
+
+    @media screen and (max-width: 767.98px) {
+        margin-bottom: 30px;
     }
 
-    &__item+&__item {
-        margin-left: 30px;
-    }
+        @media screen and (min-width: 768px) {
+            width: 354px;
+            height: 536px;
+    
+            @media screen and (min-width: 1200px) {
+                width: 270px;
+                height: 428px;
+                flex-basis: calc((100% - 90px) / 4);
+            }
+        }
+        }
 }
 
 .team-card {
-    padding-top: 30px;
+padding-top: 30px;
     padding-bottom: 30px;
 
-    &__title {
+&__title {
         font-weight: 500;
         font-size: 16px;
         line-height: 19px;
         margin-bottom: 10px;
     }
 
-    &__text {
-        color: getColor('paragraph-text');
-        font-size: 16px;
-        line-height: 1.18;
-        margin-bottom: 16px;
-    }
+  &__text {
+      color: getColor('paragraph-text');
+      font-size: 16px;
+      line-height: 1.18;
+      margin-bottom: 16px;
+  }
 }

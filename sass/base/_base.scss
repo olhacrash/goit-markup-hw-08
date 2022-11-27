@@ -1,5 +1,5 @@
 body {
-    color: getColor('primary-gray');
+color: getColor('primary-gray');
     background-color: getColor('title');
     font-family: Roboto, sans-serif;
     font-size: 14px;
@@ -7,32 +7,37 @@ body {
 }
 
 img {
-    display: block;
+display: block;
     max-width: 100%;
 }
 
-// .section {
-//     padding-top: 94px;
-//     padding-bottom: 94px;
-// }
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
 
 .container {
-    padding-left: 15px;
+padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
 
-    // desktop
-    @media screen and (min-width: 1200px) {
-        width: 1970px;
-    }
-
-    // tablet screen
-    @media screen and (min-width: 768px) {
-        width: 738px;
-    }
-
-    // mobile screen
+// mobile screen
     @media screen and (min-width: 480px) {
-        width: 450px;
+        width: 480px;
     }
+
+  // tablet screen
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    }
+
+  // desktop
+  @media screen and (min-width: 1200px) {
+      width: 1200px;
+  }
 }
