@@ -1,30 +1,61 @@
 .hero {
-    padding-top: 200px;
-    padding-bottom: 210px;
+    width: 450px;
+        padding-top: 118px;
+        padding-bottom: 118px;
+        margin: 0 auto;
     color: getColor('title');
     text-align: center;
     background-color: #c4c4c4;
+@media screen and (min-width: 480px) {
+        width: 450px;
+        padding-top: 118px;
+        padding-bottom: 118px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 738px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1170px;
+        padding-top: 200px;
+        padding-bottom: 210px;
+    }
 }
 
 .overlay {
+    margin: 0 auto;
+        max-width: 480px;
+        min-height: 400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/background-image.png);
-    max-width: 1600px;
-    min-height: 600px;
-    margin: 0 auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+@media screen and (min-width: 768px) {
+        max-width: 768px;
+        min-height: 400px;
+    }
+
+    @media screen and (min-width: 1200px) {
+            max-width: 1600px;
+                min-height: 600px;
 }
 
-.hero-title {
-    max-width: 696px;
-    margin: 0px auto;
-    margin-bottom: 30px;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-}
+                .hero-title {
+            max-width: 360px;
+                margin: 0 auto;
+                margin-bottom: 30px;
+                font-weight: 900;
+            font-size: 26px;
+                line-height: 1.36;
+                text-align: center;
+                letter-spacing: 0.06em;
+                text-transform: uppercase;
+@media screen and (min-width: 1200px) {
+        font-size: 44px;
+        max-width: 696px;
+    }
+                }
