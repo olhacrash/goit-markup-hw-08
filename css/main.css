@@ -230,21 +230,6 @@ ul {
   border-bottom: 1px solid #ececec;
   margin: 0 auto;
 }
-@media screen and (min-width: 480px) {
-  .page-header {
-    width: 450px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .page-header {
-    width: 738px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .page-header {
-    width: 1170px;
-  }
-}
 
 .header-nav {
   display: -webkit-box;
@@ -764,21 +749,6 @@ ul {
   padding-bottom: 60px;
   margin: 0 auto;
   background-color: #2f303a;
-}
-@media screen and (min-width: 480px) {
-  .footer {
-    width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer {
-    width: 1600px;
-  }
 }
 
 .contacts-style {
@@ -1426,5 +1396,14 @@ ul {
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
+  letter-spacing: 0.02em;
+}
+
+.menu__contacts-item--tel {
+  display: block;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.1764705882;
+  color: #2196f3;
   letter-spacing: 0.02em;
 }/*# sourceMappingURL=main.css.map */
