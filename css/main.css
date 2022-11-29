@@ -397,7 +397,6 @@ ul {
   width: 450px;
   padding-top: 118px;
   padding-bottom: 118px;
-  margin: 0 auto;
   color: #ffffff;
   text-align: center;
   background-color: #c4c4c4;
@@ -465,21 +464,6 @@ ul {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .feature {
-    width: 450px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .feature {
-    width: 738px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .feature {
-    width: 1170px;
-  }
-}
 @media screen and (min-width: 768px) {
   .feature__list {
     display: -webkit-box;
@@ -612,21 +596,6 @@ ul {
   padding-bottom: 60px;
   padding-top: 60px;
   background-color: #f5f4fa;
-}
-@media screen and (min-width: 480px) {
-  .team {
-    width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .team {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team {
-    width: 1600px;
-  }
 }
 .team__title {
   margin-bottom: 30px;
@@ -1308,21 +1277,6 @@ ul {
 
 .clients {
   text-align: center;
-}
-@media screen and (min-width: 480px) {
-  .clients {
-    width: 450px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .clients {
-    width: 738px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .clients {
-    width: 1170px;
-  }
 }
 
 .clients__title {
