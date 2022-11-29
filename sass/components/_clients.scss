@@ -51,7 +51,7 @@ display: flex;
     border-radius: 4px;
         color: #afb1b8;
     transition: color 250ms var(--cubic-brizer), border-color 250ms var(--cubic-brizer);
-
+    
     @media screen and (min-width: 768px) {
         width: 226px;
         }
@@ -64,5 +64,4 @@ display: flex;
     .clients__link:focus {
         border-color: getColor('accent-text');
         color: getColor('accent-text');
-    
 }

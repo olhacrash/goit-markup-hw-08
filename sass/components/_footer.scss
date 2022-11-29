@@ -1,7 +1,19 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
+    margin: 0 auto;
     background-color: getColor('bcg-gray');
+
+    @media screen and (min-width: 480px) {
+            width: 480px;
+        }
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1600px;
+    }
 }
 
 .contacts-style {
@@ -17,6 +29,15 @@
 .contacts-list-footer {
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+.logo-address {
+
+    @media screen and (max-width: 1199.98px) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    }
 }
 
 .footer .link-adress {
@@ -52,12 +73,38 @@
 
 .address-join-to {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
     align-items: baseline;
+    gap: 0;
+    }
 }
 
 .join-to {
+
+    @media screen and (max-width: 1199.98px) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
     margin-left: 70px;
     margin-right: 93px;
+    }
+
+}
+
+
+.follow-us {
+    @media screen and (max-width: 1199.98px) {
+        text-align: center;
+    }
 }
 
 .join-to-title,
@@ -87,13 +134,24 @@
 .form-follow {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-top: 20px;
+    gap: 20px;
+
+    @media screen and (max-width: 1199.98px) {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        gap: 10px;
+        margin-top: 20px;
+    }
 }
 
 .email-field {
-    width: 358px;
-    height: 50px;
+    width: 450px;
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+    }
 
     padding-top: 15px;
     padding-bottom: 15px;
