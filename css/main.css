@@ -53,8 +53,6 @@ img {
 }
 
 .section {
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -1431,31 +1429,27 @@ ul {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-@media screen and (max-width: 767.98px) {
-  .menu-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    padding: 48px 40px;
-    margin: 0 auto;
-    background-color: #212121;
-    z-index: 999;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    -webkit-transition: -webkit-transform 250ms ease-out;
-    transition: -webkit-transform 250ms ease-out;
-    transition: transform 250ms ease-out;
-    transition: transform 250ms ease-out, -webkit-transform 250ms ease-out;
-  }
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  z-index: 999;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms ease-out;
+  transition: -webkit-transform 250ms ease-out;
+  transition: transform 250ms ease-out;
+  transition: transform 250ms ease-out, -webkit-transform 250ms ease-out;
 }
 
-@media screen and (max-width: 767.98px) {
-  .menu-container.is-open {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .menu-container .menu-toggle {
@@ -1473,7 +1467,10 @@ ul {
 
 .mobile-menu .link {
   display: block;
-  padding: 10px;
-  color: #fff;
+  color: #212121;
   text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
 }/*# sourceMappingURL=main.css.map */
