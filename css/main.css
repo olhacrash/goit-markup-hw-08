@@ -603,7 +603,7 @@ ul {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   width: 100%;
-  height: 622px;
+  height: auto;
 }
 @media screen and (max-width: 767.98px) {
   .team__item {
@@ -824,7 +824,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 1199.98px) {
+@media screen and (min-width: 767.98px) {
   .join-to {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -840,12 +840,6 @@ ul {
   .join-to {
     margin-left: 70px;
     margin-right: 93px;
-  }
-}
-
-@media screen and (max-width: 1199.98px) {
-  .follow-us {
-    text-align: center;
   }
 }
 
@@ -881,7 +875,7 @@ ul {
           align-items: center;
   gap: 20px;
 }
-@media screen and (max-width: 1199.98px) {
+@media screen and (min-width: 768px) {
   .form-follow {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -898,6 +892,7 @@ ul {
 }
 
 .email-field {
+  display: block;
   width: auto;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -1281,9 +1276,11 @@ ul {
   fill: currentcolor;
 }
 
-.clients__item {
-  -ms-flex-preferred-size: calc((100% - 30px) / 2);
-      flex-basis: calc((100% - 30px) / 2);
+@media screen and (max-width: 767.98px) {
+  .clients__item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
 }
 
 .clients__link {

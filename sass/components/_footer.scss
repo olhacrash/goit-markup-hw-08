@@ -72,6 +72,7 @@
 }
 
 .address-join-to {
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -87,7 +88,7 @@
 
 .join-to {
 
-    @media screen and (max-width: 1199.98px) {
+    @media screen and (min-width: 767.98px) {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -103,7 +104,9 @@
 
 .follow-us {
     @media screen and (max-width: 1199.98px) {
-        text-align: center;
+        // text-align: center;
+        // display: flex;
+        // flex-direction: column;
     }
 }
 
@@ -136,7 +139,7 @@
     align-items: center;
     gap: 20px;
 
-    @media screen and (max-width: 1199.98px) {
+    @media screen and (min-width: 768px) {
         flex-direction: column;
         margin-top: 20px;
     }
@@ -148,6 +151,7 @@
 }
 
 .email-field {
+    display: block;
     width: auto;
     @media screen and (min-width: 1200px) {
         width: 358px;

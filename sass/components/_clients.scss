@@ -42,7 +42,9 @@ display: flex;
 }
 
 .clients__item {
-    flex-basis: calc((100% - 30px)/2);
+    @media screen and (max-width: 767.98px) {
+        flex-basis: calc((100% - 30px)/2);
+        }
 }
 
 .clients__link {
