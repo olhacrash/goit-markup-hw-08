@@ -386,13 +386,9 @@ ul {
   text-align: center;
   background-color: #c4c4c4;
 }
-@media screen and (min-width: 768px) {
-  .hero {
-    max-width: 1600px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .hero {
+    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 210px;
   }
@@ -1281,7 +1277,6 @@ ul {
 }
 
 .clients__link {
-  width: 210px;
   height: 92px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1352,8 +1347,8 @@ ul {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding: 48px 40px;
   margin: 0 auto;
   background-color: #ffffff;

@@ -5,11 +5,12 @@
   color: getColor("title");
   text-align: center;
   background-color: #c4c4c4;
-  @media screen and (min-width: 768px) {
-    max-width: 1600px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   max-width: 1600px;
+  // }
 
   @media screen and (min-width: 1200px) {
+    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 210px;
   }

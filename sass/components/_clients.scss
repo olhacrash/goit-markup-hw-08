@@ -41,8 +41,11 @@ display: flex;
     fill: currentcolor;
 }
 
+// .clients__item {
+//     flex-basis: calc((100% - 30px)/2);
+// }
+
 .clients__link {
-    width: 210px;
     height: 92px;
     display: flex;
     justify-content: center;
