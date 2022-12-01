@@ -33,7 +33,7 @@
         margin-bottom: 30px;
         justify-content: center;
 
-        width: 450px;
+        width: 100%;
         height: 120px;
         background-color: getColor('third-bcg');
 
@@ -61,7 +61,7 @@
 
     &__text {
         color: getColor('paragraph-text');
-        width: 450px;
+        width: 100%;
         line-height: calc(24 / 14);
 
         @media screen and (min-width: 768px) {

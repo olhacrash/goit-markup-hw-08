@@ -1,24 +1,16 @@
 .hero {
-  width: 450px;
+  max-width: 1600px;
   padding-top: 118px;
   padding-bottom: 118px;
   color: getColor("title");
   text-align: center;
   background-color: #c4c4c4;
   @media screen and (min-width: 480px) {
-    width: 480px;
-    height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
   }
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    height: 400px;
-  }
-
   @media screen and (min-width: 1200px) {
-    width: 1600px;
     padding-top: 200px;
     padding-bottom: 210px;
   }
