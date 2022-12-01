@@ -379,17 +379,16 @@ ul {
 }
 
 .hero {
-  max-width: 1600px;
+  width: auto;
   padding-top: 118px;
   padding-bottom: 118px;
   color: #ffffff;
   text-align: center;
   background-color: #c4c4c4;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .hero {
-    padding-top: 118px;
-    padding-bottom: 118px;
+    max-width: 1600px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -401,7 +400,7 @@ ul {
 
 .overlay {
   margin: 0 auto;
-  max-width: 480px;
+  max-width: auto;
   min-height: 400px;
   background-size: cover;
   background-repeat: no-repeat;

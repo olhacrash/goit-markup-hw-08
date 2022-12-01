@@ -1,13 +1,12 @@
 .hero {
-  max-width: 1600px;
+  width: auto;
   padding-top: 118px;
   padding-bottom: 118px;
   color: getColor("title");
   text-align: center;
   background-color: #c4c4c4;
-  @media screen and (min-width: 480px) {
-    padding-top: 118px;
-    padding-bottom: 118px;
+  @media screen and (min-width: 768px) {
+    max-width: 1600px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -18,7 +17,7 @@
 
 .overlay {
   margin: 0 auto;
-  max-width: 480px;
+  max-width: auto;
   min-height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
