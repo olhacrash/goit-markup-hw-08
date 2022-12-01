@@ -1,12 +1,12 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    margin: 0 auto;
     background-color: getColor('bcg-gray');
 
-    // @media screen and (min-width: 480px) {
-    //         width: 480px;
-    //     }
+    @media screen and (max-width: 1199.98px) {
+            text-align: center;
+        }
+
     // @media screen and (min-width: 768px) {
     //     width: 768px;
     // }
@@ -32,12 +32,15 @@
 }
 
 .logo-address {
+    @media screen and (max-width: 767.98px) {
+    display: block;
+     }
 
-    @media screen and (max-width: 1199.98px) {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    }
+    // @media screen and (max-width: 1199.98px) {
+    // display: flex;
+    // flex-direction: column;
+    // text-align: center;
+    // }
 }
 
 .footer .link-adress {
@@ -73,22 +76,25 @@
 
 .address-join-to {
     
+    @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 60px;
+    }
 
     @media screen and (min-width: 1200px) {
-    display: flex;
     flex-wrap: nowrap;
     align-items: baseline;
-    gap: 0;
     }
 }
 
 .join-to {
+     @media screen and (max-width: 767.98px) {
+    display: block;
+     }
 
-    @media screen and (min-width: 767.98px) {
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -103,11 +109,9 @@
 
 
 .follow-us {
-    @media screen and (max-width: 1199.98px) {
-        // text-align: center;
-        // display: flex;
-        // flex-direction: column;
-    }
+    @media screen and (max-width: 767.98px) {
+    display: block;
+     }
 }
 
 .join-to-title,
@@ -135,27 +139,25 @@
 // Подпишитесь на нас
 
 .form-follow {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    gap: 10px;
+
+    @media screen and (max-width: 767.98px) {
+       display: flex;
+    flex-direction: column;
+    }
 
     @media screen and (min-width: 768px) {
-        flex-direction: column;
         margin-top: 20px;
     }
     
     @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        align-items: center;
         gap: 10px;
-        margin-top: 20px;
     }
 }
 
 .email-field {
-    display: block;
-    width: auto;
-    @media screen and (min-width: 1200px) {
-        width: 358px;
-    }
 
     padding-top: 15px;
     padding-bottom: 15px;
@@ -181,7 +183,29 @@
         color: rgba(255, 255, 255, 0.6);
     }
 
+
+       @media screen and (max-width: 767.98px) {
+        display: block;
+    width: auto;
+    }
+
     @media screen and (min-width: 768px) {
         width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+    }
+}
+
+.footer__title {
+    @media screen and (max-width: 767.98px) {
+    margin-top: 20px;
+    }
+}
+
+.footer__container {
+    @media screen and (max-width: 767.98px) {
+    margin-top: 60px;
     }
 }

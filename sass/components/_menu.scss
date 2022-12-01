@@ -59,18 +59,16 @@ margin-left: auto;
 .mobile-menu {
   display: flex;
   flex-direction: column;
+
   gap: 32px;
   padding: 0;
-  margin-bottom: auto;
+margin-bottom: 306px;
+
   list-style: none;
 }
 
 .mobile-menu .link.current {
   color: #2196f3;
-}
-
-.menu__contacts {
-  margin-top: 302px;
 }
 
 .mobile-menu .link {
