@@ -898,7 +898,7 @@ ul {
 }
 
 .email-field {
-  width: 450px;
+  width: auto;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -961,6 +961,11 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 768px) {
+  .email-field {
+    width: 450px;
+  }
 }
 
 .backdrop {
@@ -1274,6 +1279,11 @@ ul {
 
 .clients__icon {
   fill: currentcolor;
+}
+
+.clients__item {
+  -ms-flex-preferred-size: calc((100% - 30px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
 }
 
 .clients__link {

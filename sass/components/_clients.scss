@@ -41,9 +41,9 @@ display: flex;
     fill: currentcolor;
 }
 
-// .clients__item {
-//     flex-basis: calc((100% - 30px)/2);
-// }
+.clients__item {
+    flex-basis: calc((100% - 30px)/2);
+}
 
 .clients__link {
     height: 92px;
