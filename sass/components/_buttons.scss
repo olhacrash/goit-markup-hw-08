@@ -26,6 +26,14 @@
 
     display: flex;
     justify-content: center;
+
+    @media screen and (max-width: 767.98px) {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        row-gap: 15px;
+        width: 326px;
+        column-gap: 8px;
+    }
 }
 
 .list-of-buttons .btn {
@@ -53,9 +61,9 @@
     }
 }
 
-.list-of-buttons .item+.item {
-    margin-left: 8px;
-}
+// .list-of-buttons .item+.item {
+//     margin-left: 8px;
+// }
 
 .btn--follow-us {
     display: flex;

@@ -139,7 +139,6 @@
 // Подпишитесь на нас
 
 .form-follow {
-    gap: 10px;
 
     @media screen and (max-width: 767.98px) {
        display: flex;
@@ -152,8 +151,8 @@
     
     @media screen and (min-width: 1200px) {
         flex-direction: row;
-        align-items: center;
         gap: 10px;
+        display: flex;
     }
 }
 
@@ -191,6 +190,7 @@
 
     @media screen and (min-width: 768px) {
         width: 450px;
+        margin-bottom: 20px;
     }
 
     @media screen and (min-width: 1200px) {
