@@ -908,6 +908,11 @@ ul {
   }
 }
 
+.social-links-menu {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .join-to-title,
 .follow-us-title {
   font-size: 14px;
