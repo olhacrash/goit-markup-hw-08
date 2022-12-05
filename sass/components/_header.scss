@@ -34,7 +34,6 @@
 
     @media screen and (min-width: 768px) {
        display: flex;
-       margin-right: 96px;
        margin-left: 88px;
     }
 }
@@ -42,6 +41,20 @@
 .header-nav-list .item:not(:last-child),
 .contacts-list .item:not(:last-child) {
     margin-right: 50px;
+}
+
+.social-icon {
+    @media screen and (max-width: 1199.98px) {
+       width: 14px;
+        height: 10px;
+    }
+}
+
+.social-icon.tel {
+    @media screen and (max-width: 1199.98px) {
+       width: 10px;
+        height: 14px;
+    }
 }
 
 .header-nav .link.current {
