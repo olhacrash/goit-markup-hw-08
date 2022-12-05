@@ -128,19 +128,37 @@
           <h2 class="work-page__title">Чим ми займаємося</h2>
           <ul class="work-page__list">
             <li class="work-page__item">
-              <img src="./images/img.jpg" alt="Десктопні додатки" width="370" />
+              <picture>
+                <source type="image/jpeg" srcset="
+                                  ./images/work/img.jpg     370w,
+                                  ./images/work/img_740.jpg 740w
+                                " media="screen and (min-width: 1200px)" sizes="370px, 100vw" />
+                <img src="./images/img.jpg" alt="Десктопні додатки" width="370" />
+              </picture>
               <div class="work-page__overlay">
                 <p class="work-page__text">Десктопні додатки</p>
               </div>
             </li>
             <li class="work-page__item">
-              <img src="./images/imgg.jpg" alt="Мобільні додатки" width="370" />
+              <picture>
+                <source type="image/jpeg" srcset="
+                                  ./images/work/imgg.jpg      370w,
+                                  ./images/work/img_740-1.jpg 740w
+                                " media="screen and (min-width: 1200px)" sizes="370px, 100vw" />
+                <img src="./images/imgg.jpg" alt="Десктопні додатки" width="370" />
+              </picture>
               <div class="work-page__overlay">
                 <p class="work-page__text">Мобільні додатки</p>
               </div>
             </li>
             <li class="work-page__item">
-              <img src="./images/imggg.jpg" alt="Дизайнерські рішення" width="370" />
+              <picture>
+                <source type="image/jpeg" srcset="
+                                  ./images/work/imggg.jpg     370w,
+                                  ./images/work/img_740-2.jpg 740w
+                                " media="screen and (min-width: 1200px)" sizes="370px, 100vw" />
+                <img src="./images/imggg.jpg" alt="Десктопні додатки" width="370" />
+              </picture>
               <div class="work-page__overlay">
                 <p class="work-page__text">Дизайнерські рішення</p>
               </div>
@@ -154,15 +172,30 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img srcset="
-                                          ./images/team/igor.jpg 270w 
-                                           ./images/team/img_354. 354w 
-                                           ./images/team/img_450. 450w 
-                                           ./images/team/img_540. 540w 
-                                           ./images/team/img_708. 708w 
-                                           ./images/team/img_900. 900w"
+              <picture>
+                <source type="image/jpeg" srcset="
+                                  ./images/team/img_450.jpg 450w,
+                                  ./images/team/img_900.jpg 900w
+                                " media="screen and (max-width: 767.99px)" sizes="450px, 100vw" />
+                <source type="image/jpeg" srcset="
+                                  ./images/team/img_354.jpg 354w,
+                                  ./images/team/img_708.jpg 708w
+                                " media="screen and (max-width: 1199.99px)" sizes="(min-width: 768px) 354px, 100vw" />
+                <source type="image/jpeg" srcset="
+                                  ./images/team/igor.jpg    270w,
+                                  ./images/team/img_540.jpg 540w
+                                " media="screen and (min-width: 1200px)" sizes="270px, 100vw" />
+                <img src="./images/team/img_450.jpg" alt="Ігор Дем'яненко" loading="lazy" />
+              </picture>
+              <!-- <img srcset="
+                                                                                                                                                                        ./images/team/igor.jpg 270w,
+                                                                                                                                                                         ./images/team/img_354.jpg 354w,
+                                                                                                                                                                         ./images/team/img_450.jpg 450w,
+                                                                                                                                                                         ./images/team/img_540.jpg 540w,
+                                                                                                                                                                         ./images/team/img_708.jpg 708w,
+                                                                                                                                                                         ./images/team/img_900.jpg 900w"
                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                src="./images/team/img_450.jpg" alt="Ігор Дем'яненко" width="450" />
+                src="./images/team/img_450.jpg" alt="Ігор Дем'яненко" /> -->
               <div class="team-card">
                 <h3 class="team-card__title">Ігор Дем'яненко</h3>
                 <p class="team-card__text">Product Designer</p>
@@ -219,7 +252,21 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/team/olga.jpg" alt="Ольга Рєпіна" width="450" />
+              <picture>
+                <source type="image/jpeg" srcset="
+                                  ./images/team/img_450-1.jpg 450w,
+                                  ./images/team/img_900-1.jpg 900w
+                                " media="screen and (max-width: 767.99px)" sizes="450px, 100vw" />
+                <source type="image/jpeg" srcset="
+                                  ./images/team/img_354-1.jpg 354w,
+                                  ./images/team/img_708-1.jpg 708w
+                                " media="screen and (max-width: 1199.99px)" sizes="(min-width: 768px) 354px, 100vw" />
+                <source type="image/jpeg" srcset="
+                                  ./images/team/olga.jpg      270w,
+                                  ./images/team/img_540-1.jpg 540w
+                                " media="screen and (min-width: 1200px)" sizes="270px, 100vw" />
+                <img src="./images/team/img_450-1.jpg" alt="Ольга Рєпіна" width="450" />
+              </picture>
               <div class="team-card">
                 <h3 class="team-card__title">Ольга Рєпіна</h3>
                 <p class="team-card__text">Frontend Developer</p>
@@ -276,7 +323,21 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/team/mikola.jpg" alt="Микола Тарасов" width="450" />
+              <picture>
+                <source type="image/jpeg" srcset="
+                                  ./images/team/img_450-2.jpg 450w,
+                                  ./images/team/img_900-2.jpg 900w
+                                " media="screen and (max-width: 767.99px)" sizes="450px, 100vw" />
+                <source type="image/jpeg" srcset="
+                                  ./images/team/img_354-2.jpg 354w,
+                                  ./images/team/img_708-2.jpg 708w
+                                " media="screen and (max-width: 1199.99px)" sizes="(min-width: 768px) 354px, 100vw" />
+                <source type="image/jpeg" srcset="
+                                  ./images/team/mikola.jpg    270w,
+                                  ./images/team/img_540-2.jpg 540w
+                                " media="screen and (min-width: 1200px)" sizes="270px, 100vw" />
+                <img src="./images/team/img_450-2.jpg" alt="Микола Тарасов" width="450" />
+              </picture>
               <div class="team-card">
                 <h3 class="team-card__title">Микола Тарасов</h3>
                 <p class="team-card__text">Marketing</p>
@@ -333,7 +394,21 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/team/mihaylo.jpg" alt="Михайло Єрмаков" width="450" />
+              <picture>
+                <source type="image/jpeg" srcset="
+                                  ./images/team/img_450-3.jpg 450w,
+                                  ./images/team/img_900-3.jpg 900w
+                                " media="screen and (max-width: 767.99px)" sizes="450px, 100vw" />
+                <source type="image/jpeg" srcset="
+                                  ./images/team/img_354-3.jpg 354w,
+                                  ./images/team/img_708-3.jpg 708w
+                                " media="screen and (max-width: 1199.99px)" sizes="(min-width: 768px) 354px, 100vw" />
+                <source type="image/jpeg" srcset="
+                                  ./images/team/mihaylo.jpg   270w,
+                                  ./images/team/img_540-3.jpg 540w
+                                " media="screen and (min-width: 1200px)" sizes="270px, 100vw" />
+                <img src="./images/team/img_450-2.jpg" alt="Михайло Єрмаков" width="450" />
+              </picture>
               <div class="team-card">
                 <h3 class="team-card__title">Михайло Єрмаков</h3>
                 <p class="team-card__text">UI Designer</p>
